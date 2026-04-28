@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Checkout</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="navbar">
+    <h2>Checkout</h2>
+</div>
+
+<div class="container">
+
+<input placeholder="Full Name">
+<input placeholder="Address">
+<input placeholder="Phone">
+
+<select>
+    <option>Cash on Delivery</option>
+    <option>Bank Transfer</option>
+</select>
+
+<button onclick="placeOrder()">Place Order</button>
+
+</div>
+
+<script>
+function placeOrder(){
+    alert("Order Placed Successfully!");
+    localStorage.removeItem("cart");
+}
+</script>
+
+</body>
+</html>

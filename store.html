@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>A1 Watches</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="navbar">
+    <h2>A1 Watches</h2>
+    <div>
+        <a href="store.html">Home</a>
+        <a href="cart.html">Cart</a>
+        <a href="checkout.html">Checkout</a>
+    </div>
+</div>
+
+<div class="container">
+    <h2>Our Products</h2>
+
+    <div class="products">
+
+        <div class="card">
+            <h3>Rolex Style</h3>
+            <p>PKR 5000</p>
+            <button onclick="add('Rolex Style')">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <h3>Casio Watch</h3>
+            <p>PKR 3000</p>
+            <button onclick="add('Casio Watch')">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <h3>Smart Watch</h3>
+            <p>PKR 4500</p>
+            <button onclick="add('Smart Watch')">Add to Cart</button>
+        </div>
+
+    </div>
+</div>
+
+<script>
+function add(item){
+    let cart = JSON.parse(localStorage.getItem("cart") || "[]");
+    cart.push(item);
+    localStorage.setItem("cart", JSON.stringify(cart));
+    alert("Added to cart");
+}
+</script>
+
+</body>
+</html>

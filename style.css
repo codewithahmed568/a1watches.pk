@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f8f8f8;
+}
+
+/* NAVBAR */
+.navbar {
+    background: #111;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* CONTAINER */
+.container {
+    padding: 30px;
+}
+
+/* PRODUCTS */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+button {
+    background: black;
+    color: white;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+/* FORM */
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
